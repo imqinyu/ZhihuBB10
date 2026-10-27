@@ -1,0 +1,6 @@
+[
+  {"id":"qa-root","author":{"id":"qa-user","name":"示例读者","avatar_url":"asset:///daily/images/account_avatar.png"},"content":"<p>这是评论区的正文。沿用日报的头像、作者、赞数和时间布局，内容可以自然换行。</p>","like_count":12,"child_comment_count":2,"created_time":1792916969},
+  {"id":"qa-daily","author":"另一位读者","avatar":"asset:///daily/images/account_avatar.png","content":"这是一条带回复引用的评论，点击引用可以展开较长的原评论。","likes":3,"time":1792916000,"reply_to":{"author":"原评论作者","content":"这段引用超过两行后仍可展开，评论正文不限制行数，保留原有日报评论的显示方式。","status":0}},
+  {"id":"qa-deleted","author":{"name":"读者三"},"content":"引用内容已经删除时显示相应提示。","like_count":0,"created_time":1792915000,"reply_to":{"status":1,"error_msg":"该评论已删除"}},
+  {"id":"qa-legacy","author":{"member":{"id":"qa-user-4","name":"读者四","avatar_url":"asset:///daily/images/account_avatar.png"}},"content":"兼容普通评论的作者资料格式。","vote_count":1,"created_time":1792914000}
+]

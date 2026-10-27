@@ -1,0 +1,10 @@
+APP_NAME = Zhihu
+CONFIG += qt warn_on cascades10
+QT += network declarative gui
+LIBS += -lbbdata -lbbsystem -lbbdevice
+SOURCES += $$PWD/src/main.cpp $$PWD/src/applicationui.cpp $$PWD/src/zhihu.cpp $$PWD/src/signature.cpp $$PWD/src/phone_login.cpp $$PWD/src/phone_encrypt.cpp
+HEADERS += $$PWD/src/applicationui.hpp $$PWD/src/zhihu.hpp $$PWD/src/signature.hpp $$PWD/src/phone_login.hpp
+SOURCES += $$PWD/src/daily/Requester/Requester.cpp $$PWD/src/daily/WebImageView/WebImageView.cpp $$PWD/src/daily/Misc/Misc.cpp
+HEADERS += $$PWD/src/daily/Requester/Requester.hpp $$PWD/src/daily/WebImageView/WebImageView.hpp $$PWD/src/daily/Misc/Misc.hpp
+HEADERS += $$PWD/src/daily/RequestDeadline.hpp
+OTHER_FILES += $$files($$PWD/assets/*.qml) $$files($$PWD/assets/*.js)

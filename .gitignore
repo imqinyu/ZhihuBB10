@@ -1,0 +1,78 @@
+# QNX / Cascades build output (keep the hand-written root Makefile).
+/arm/
+/x86/
+/dist/
+/o/
+/o-g/
+/o.le-v7*/
+**/.obj/
+**/.moc/
+*.o
+*.obj
+*.d
+*.pch
+*.bar
+
+# qmake / Momentics generated files and per-user IDE state.
+/config.pri
+/.assets.index
+.qmake.cache
+.qmake.stash
+*.pro.user*
+*.qmlproject.user*
+.metadata/
+# Keep .project, .cproject, .settings, .pro and source descriptors.
+
+# Validation output; retain probe sources, fixtures and Markdown reports.
+/validation/runtime-assets/
+/validation/python-libs/
+/validation/shots/
+/validation/*-probe/o/
+/validation/*-probe/o-g/
+/validation/*-probe/o.le-v7*/
+/validation/*-probe/Makefile*
+/validation/auth-probe/results-*.json
+/validation/ui-check/o/
+/validation/ui-check/o-g/
+/validation/ui-check/o.le-v7*/
+/validation/ui-check/Makefile*
+/validation/ui-check/command.txt
+/validation/smoke-descriptor.xml
+*.log
+*.pid
+*.core
+*.stackdump
+
+# Local runtime data, downloaded dependencies and Python bytecode.
+/data/
+/cache/
+/tmp/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials and BlackBerry signing material (public CA .pem files stay).
+.env
+.env.*
+!.env.example
+!.env.sample
+/secrets/
+/.credentials/
+/validation/bridge-key*
+qa-cookie
+*.key
+*.p12
+*.pfx
+*.csk
+*.csj
+*.jks
+*.keystore
+
+# OS / editor temporary files.
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~

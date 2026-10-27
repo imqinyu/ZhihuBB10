@@ -1,0 +1,12 @@
+APP_NAME = UiCheck
+CONFIG += qt warn_on cascades10
+QT += network declarative gui
+LIBS += -lbbdata -lbbsystem -lbbdevice -lscreen
+INCLUDEPATH += ../../src
+SOURCES += main.cpp ../../src/applicationui.cpp ../../src/zhihu.cpp ../../src/signature.cpp
+SOURCES += ../../src/phone_login.cpp ../../src/phone_encrypt.cpp
+HEADERS += ../../src/phone_login.hpp
+HEADERS += check.hpp ../../src/applicationui.hpp ../../src/zhihu.hpp ../../src/signature.hpp
+SOURCES += ../../src/daily/Requester/Requester.cpp ../../src/daily/WebImageView/WebImageView.cpp ../../src/daily/Misc/Misc.cpp
+HEADERS += ../../src/daily/Requester/Requester.hpp ../../src/daily/WebImageView/WebImageView.hpp ../../src/daily/Misc/Misc.hpp
+HEADERS += ../../src/daily/RequestDeadline.hpp

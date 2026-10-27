@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+    <id>com.example.ZhihuTLS12</id>
+    <name>Zhihu TLS 1.2 Probe</name>
+    <versionNumber>1.0.3</versionNumber>
+    <author>Example Inc.</author>
+    <configuration name="Simulator-Debug">
+        <platformArchitecture>x86</platformArchitecture>
+        <asset path="o-g/TlsProbe" entry="true" type="Qnx/Elf">TlsProbe</asset>
+    </configuration>
+    <configuration name="Device-Debug">
+        <platformArchitecture>armle-v7</platformArchitecture>
+        <asset path="o.le-v7-g/TlsProbe" entry="true" type="Qnx/Elf">TlsProbe</asset>
+    </configuration>
+    <initialWindow><autoOrients>false</autoOrients><systemChrome>none</systemChrome></initialWindow>
+    <asset path="probe-ca.pem">probe-ca.pem</asset><permission system="true">run_native</permission>
+    <permission>access_internet</permission>
+    <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
+</qnx>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+    <id>com.example.ZhihuUiCheck030</id>
+    <name>Zhihu UI Check</name>
+    <versionNumber>1.3.1</versionNumber>
+    <author>Example Inc.</author>
+    <configuration name="Simulator-Debug">
+        <platformArchitecture>x86</platformArchitecture>
+        <asset path="o-g/UiCheck" entry="true" type="Qnx/Elf">UiCheck</asset>
+    </configuration>
+    <initialWindow><autoOrients>false</autoOrients><systemChrome>none</systemChrome></initialWindow>
+    <asset path="../../assets">assets</asset>
+    <asset path="fixture.json">qa/fixture.json</asset>
+    <asset path="comments.json">qa/comments.json</asset>
+    <permission system="true">run_native</permission>
+    <permission>access_internet</permission>
+    <permission>access_shared</permission>
+    <env var="CASCADES_THEME" value="bright?primaryColor=0x0084FF"/>
+    <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
+</qnx>
